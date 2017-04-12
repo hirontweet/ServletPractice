@@ -110,4 +110,14 @@
     <servlet-name>ReceiveAllRequests</servlet-name>
     <url-pattern>/RecAllReqs</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RequestHeaderSample</servlet-name>
+    <servlet-class>RequestHeaderSample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RequestHeaderSample</servlet-name>
+    <url-pattern>/ReqHeaderSamp</url-pattern>
+  </servlet-mapping>
 </web-app>
