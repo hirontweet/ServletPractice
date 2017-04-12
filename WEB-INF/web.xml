@@ -40,4 +40,14 @@
     <servlet-name>CheckMethod</servlet-name>
     <url-pattern>/checkmethod</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RequestParameterSample</servlet-name>
+    <servlet-class>RequestParameterSample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RequestParameterSample</servlet-name>
+    <url-pattern>/ReqParamSamp</url-pattern>
+  </servlet-mapping>
 </web-app>
