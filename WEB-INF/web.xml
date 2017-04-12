@@ -140,4 +140,14 @@
     <servlet-name>ResponseContentType2</servlet-name>
     <url-pattern>/RespContentType2</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ResponseWriter</servlet-name>
+    <servlet-class>ResponseWriter</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ResponseWriter</servlet-name>
+    <url-pattern>/RespWriter</url-pattern>
+  </servlet-mapping>
 </web-app>
