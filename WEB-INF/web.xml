@@ -160,4 +160,14 @@
     <servlet-name>ResponseStatusCode</servlet-name>
     <url-pattern>/RespSC</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ResponseSetHeader</servlet-name>
+    <servlet-class>ResponseSetHeaderSample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ResponseSetHeader</servlet-name>
+    <url-pattern>/RespSetHeader</url-pattern>
+  </servlet-mapping>
 </web-app>
