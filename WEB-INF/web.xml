@@ -150,4 +150,14 @@
     <servlet-name>ResponseWriter</servlet-name>
     <url-pattern>/RespWriter</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ResponseStatusCode</servlet-name>
+    <servlet-class>ResponseStatusCodeSample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ResponseStatusCode</servlet-name>
+    <url-pattern>/RespSC</url-pattern>
+  </servlet-mapping>
 </web-app>
