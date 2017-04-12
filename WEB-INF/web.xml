@@ -100,4 +100,14 @@
     <servlet-name>RequestMethods</servlet-name>
     <url-pattern>/RequestMethods</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ReceiveAllRequests</servlet-name>
+    <servlet-class>ReceiveAllRequests</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ReceiveAllRequests</servlet-name>
+    <url-pattern>/RecAllReqs</url-pattern>
+  </servlet-mapping>
 </web-app>
