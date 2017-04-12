@@ -120,4 +120,24 @@
     <servlet-name>RequestHeaderSample</servlet-name>
     <url-pattern>/ReqHeaderSamp</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ResponseContentType1</servlet-name>
+    <servlet-class>ResponseContentType1Sample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ResponseContentType1</servlet-name>
+    <url-pattern>/RespContentType1</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ResponseContentType2</servlet-name>
+    <servlet-class>ResponseContentType2Sample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ResponseContentType2</servlet-name>
+    <url-pattern>/RespContentType2</url-pattern>
+  </servlet-mapping>
 </web-app>
