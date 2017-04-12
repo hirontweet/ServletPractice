@@ -170,4 +170,14 @@
     <servlet-name>ResponseSetHeader</servlet-name>
     <url-pattern>/RespSetHeader</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ResponseRedirect</servlet-name>
+    <servlet-class>ResponseRedirectSample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ResponseRedirect</servlet-name>
+    <url-pattern>/RespRedirect</url-pattern>
+  </servlet-mapping>
 </web-app>

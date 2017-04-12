@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" Content="text/html;charset=UTF-8">
+<title>サンプル</title>
+</head>
+<body>
+
+<h2>選択するか入力するか選んで「送信」</h2>
+<p><b>入力時は"www"で始める</b></p>
+
+<p>リダイレクト先の設定</p>
+
+<form action="/servletpractice/RespRedirect" method="get">
+
+<table>
+<tr>
+<td>リダイレクト先の選択</td>
+<td>
+<select name="url" size="2">
+<option value="www.yahoo.co.jp">YAHOO</option>
+<option value="www.google.co.jp">GOOGLE</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<p>URL:</p>
+<input type="text" name="url" size="30" />
+</td>
+</tr>
+</table>
+<input type="submit" name="button1" value="送信">
+</form>
+
+</body>
+</html>
