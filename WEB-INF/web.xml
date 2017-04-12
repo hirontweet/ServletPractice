@@ -80,4 +80,14 @@
     <servlet-name>RequestMultiParameterSample</servlet-name>
     <url-pattern>/ReqMultiParam</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RequestURIs</servlet-name>
+    <servlet-class>RequestURIs</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RequestURIs</servlet-name>
+    <url-pattern>/RequestURIs</url-pattern>
+  </servlet-mapping>
 </web-app>
