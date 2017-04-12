@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" Content="text/html;charset=Shift_JIS">
+<title>フォームサンプル</title>
+</head>
+<body>
+
+<p>アンケート調査です</p>
+
+<!--
+    このソースでは確認のため、表示される文字エンコーディングをShift-JISにしている。
+    しかし、UTF-8などのマルチバイト文字を使うことが普及されているため、今後の利用は少ないと予測される。
+-->
+
+<!-- 
+    formタグの属性に"accept-charset"を追加して、指定の文字エンコーディングを利用している
+    これを使う理由は、このHTMLファイルからサーバに送られるデータがどの文字エンコーディングで送られているかが不明なため
+    指定することができる。
+    サーバサイドでは、ISO-8859-1の文字エンコーディングでエンコードされた文字列を受け取るようにしているため、ここでは明示的にそうしている
+-->
+<form action="/servletpractice/ReqParamMLSamp" method="get" accept-charset="ISO-8859-1">
+
+<table>
+<tr>
+<td>氏名</td>
+<td><input type="text" size="20" value="" name="name"></td>
+</tr>
+<tr>
+<td>年齢</td>
+<td><input type="text" size="5" value="" name="old"></td>
+</tr>
+<tr>
+<td>好きな果物</td>
+<td>
+<select name="food" size="3" multiple>
+<option value="りんご">りんご</option>
+<option value="メロン">メロン</option>
+<option value="ぶどう">ぶどう</option>
+</select>
+</td>
+</tr>
+</table>
+<input type="submit" name="button1" value="送信">
+</form>
+
+</body>
+</html>

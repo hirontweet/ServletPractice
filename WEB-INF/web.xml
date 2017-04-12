@@ -50,4 +50,24 @@
     <servlet-name>RequestParameterSample</servlet-name>
     <url-pattern>/ReqParamSamp</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RequestParameterMutliLangSample</servlet-name>
+    <servlet-class>RequestParameterMutliLangSample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RequestParameterMutliLangSample</servlet-name>
+    <url-pattern>/ReqParamMLSamp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RequestParameterAltMultiLangSample</servlet-name>
+    <servlet-class>RequestParameterAltMultiLangSample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RequestParameterAltMultiLangSample</servlet-name>
+    <url-pattern>/ReqParamAltMLSamp</url-pattern>
+  </servlet-mapping>
 </web-app>
