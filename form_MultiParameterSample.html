@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" Content="text/html;charset=UTF-8">
+<title>フォームサンプル</title>
+</head>
+<body>
+
+<p>アンケート調査です</p>
+
+<!-- 下はenctype属性を追加して実行する場合のタグ。しかし、無くてもTomcatを再起動することで動いた。(謎。。。)-->
+<!--<form action="/servletpractice/ReqMultiParam" method="post" enctype="application/x-www-form-urlencoded;charset=UTF-8">-->
+<form action="/servletpractice/ReqMultiParam" method="post">
+
+<table>
+<tr>
+<td>氏名</td>
+<td><input type="text" size="20" value="" name="name"></td>
+</tr>
+<tr>
+<td>年齢</td>
+<td><input type="text" size="5" value="" name="old"></td>
+</tr>
+<tr>
+<td>好きな果物</td>
+<td>
+<select name="food" size="3" multiple>
+<option value="りんご">りんご</option>
+<option value="メロン">メロン</option>
+<option value="ぶどう">ぶどう</option>
+</select>
+</td>
+</tr>
+</table>
+<input type="submit" name="button1" value="送信">
+</form>
+
+</body>
+</html>

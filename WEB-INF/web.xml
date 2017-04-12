@@ -70,4 +70,14 @@
     <servlet-name>RequestParameterAltMultiLangSample</servlet-name>
     <url-pattern>/ReqParamAltMLSamp</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RequestMultiParameterSample</servlet-name>
+    <servlet-class>RequestMultiParameterSample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RequestMultiParameterSample</servlet-name>
+    <url-pattern>/ReqMultiParam</url-pattern>
+  </servlet-mapping>
 </web-app>
