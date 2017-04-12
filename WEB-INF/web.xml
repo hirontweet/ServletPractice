@@ -90,4 +90,14 @@
     <servlet-name>RequestURIs</servlet-name>
     <url-pattern>/RequestURIs</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RequestMethods</servlet-name>
+    <servlet-class>RequestMethods</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RequestMethods</servlet-name>
+    <url-pattern>/RequestMethods</url-pattern>
+  </servlet-mapping>
 </web-app>
