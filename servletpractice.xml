@@ -1,3 +1,0 @@
-<!-- This file has to be located under "$CATALINA_HOME/conf/Catalina/localhost/" -->
-<Context path="/ServletPractice"
-docBase="c:/Users/hiron/Devel/Java Servlet/ServletPractice"/>
