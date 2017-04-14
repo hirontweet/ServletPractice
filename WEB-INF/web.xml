@@ -230,4 +230,25 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>InitParams</servlet-name>
+    <servlet-class>InitParamSample</servlet-class>
+
+    <!-- 以下がワンセット、必要な分だけinit-paramタグを追加する -->
+    <init-param>
+      <param-name>Title</param-name>
+      <param-value>Title from Init-Param</param-value>
+    </init-param>
+
+    <init-param>
+      <param-name>Message</param-name>
+      <param-value>Message written on web.xml</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>InitParams</servlet-name>
+    <url-pattern>/InitParams</url-pattern>
+  </servlet-mapping>
+
 </web-app>
