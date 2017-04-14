@@ -251,4 +251,14 @@
     <url-pattern>/InitParams</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>CookieSample</servlet-name>
+    <servlet-class>CookieSample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CookieSample</servlet-name>
+    <url-pattern>/GimmeCookie</url-pattern>
+  </servlet-mapping>
+
 </web-app>
