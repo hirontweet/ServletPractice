@@ -180,4 +180,54 @@
     <servlet-name>ResponseRedirect</servlet-name>
     <url-pattern>/RespRedirect</url-pattern>
   </servlet-mapping>
+
+  <!-- URLパターン 特定のファイルへのマッピング -->
+  <!-- 優先順位: No.1 -->
+  <servlet>
+    <servlet-name>URLPattern1</servlet-name>
+    <servlet-class>RequestURIs</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>URLPattern1</servlet-name>
+    <url-pattern>/request.html</url-pattern>
+  </servlet-mapping>
+
+  <!-- URLパターン パスマッピング -->
+  <!-- 優先順位: No.2 -->
+  <servlet>
+    <servlet-name>URLPattern2</servlet-name>
+    <servlet-class>RequestURIs</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>URLPattern2</servlet-name>
+    <url-pattern>/URL/*</url-pattern>
+  </servlet-mapping>
+
+  <!-- URLパターン 拡張子マッピング -->
+  <!-- 優先順位: No.3 -->
+  <servlet>
+    <servlet-name>URLPattern3</servlet-name>
+    <servlet-class>RequestURIs</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>URLPattern3</servlet-name>
+    <url-pattern>*.hello</url-pattern>
+  </servlet-mapping>
+
+  <!-- URLマッピング デフォルトマッピング  -->
+  <!-- 優先順位: No.4 -->
+  <!-- デフォルトマッピングが準備されているのは、パスマッピングで /* をすると拡張子マッピングにマッチしなくなるのを防ぐため -->
+  <servlet>
+    <servlet-name>URLPattern4</servlet-name>
+    <servlet-class>RequestMethods</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>URLPattern4</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
 </web-app>
