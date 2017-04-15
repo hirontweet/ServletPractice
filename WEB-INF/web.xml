@@ -412,12 +412,72 @@
   </servlet-mapping>
 
   <servlet>
-    <servlet-name>DBConnectTest</servlet-name>
+    <servlet-name>DBDriverTest</servlet-name>
+    <servlet-class>DriverLoadTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DBDriverTest</servlet-name>
+    <url-pattern>/db/drivertest</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DBConnectionTest</servlet-name>
     <servlet-class>DatabaseConnectionTest</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>DBConnectTest</servlet-name>
+    <servlet-name>DBConnectionTest</servlet-name>
     <url-pattern>/db/conntest</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DBSelect</servlet-name>
+    <servlet-class>DatabaseSelectTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DBSelect</servlet-name>
+    <url-pattern>/db/select</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DBUpdate</servlet-name>
+    <servlet-class>DatabaseUpdateTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DBUpdate</servlet-name>
+    <url-pattern>/db/update</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DBInsert</servlet-name>
+    <servlet-class>DatabaseInsertTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DBInsert</servlet-name>
+    <url-pattern>/db/insert</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DBDelete</servlet-name>
+    <servlet-class>DatabaseDeleteTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DBDelete</servlet-name>
+    <url-pattern>/db/delete</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DBPrepardStmt</servlet-name>
+    <servlet-class>DatabasePreparedStmt</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DBPrepardStmt</servlet-name>
+    <url-pattern>/db/prepstmt</url-pattern>
   </servlet-mapping>
 </web-app>

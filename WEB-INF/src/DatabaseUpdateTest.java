@@ -3,7 +3,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.sql.*;
 
-public class DatabaseConnectionTest extends HttpServlet {
+public class DatabaseUpdateTest extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response)
     throws IOException, ServletException{
 
@@ -16,8 +16,6 @@ public class DatabaseConnectionTest extends HttpServlet {
     out.println("</head>");
     out.println("<body>");
 
-    out.println("<p>");
-
     Connection conn = null;
     String url = "jdbc:mysql://localhost/servletdb";
     String user = "svuser";
@@ -25,10 +23,26 @@ public class DatabaseConnectionTest extends HttpServlet {
 
     try {
       Class.forName("com.mysql.jdbc.Driver").newInstance();
-      out.println("ドライバのロードに成功しました<br>");
-
       conn = DriverManager.getConnection(url, user, password);
-      out.println("データベース接続に成功しました<br>");
+
+      Statement stmt = conn.createStatement();
+
+      String sql = "update stocktable set company='man company' where code = 1234";
+      int num = stmt.executeUpdate(sql);
+
+      sql = "select * from stocktable";
+      ResultSet rs = stmt.executeQuery(sql);
+
+      while(rs.next()){
+        int code = rs.getInt("code");
+        String company = rs.getString("company");
+        out.println("<p>");
+        out.println("コード:" + code + ", 会社名:" + company);
+        out.println("</p>");
+      }
+
+      rs.close();
+      stmt.close();
     }catch (ClassNotFoundException e){
       out.println("ClassNotFoundException:" + e.getMessage());
     }catch (SQLException e){
@@ -39,16 +53,11 @@ public class DatabaseConnectionTest extends HttpServlet {
       try{
         if (conn != null){
           conn.close();
-          out.println("データベース切断に成功しました");
-        }else{
-          out.println("コネクションがありません");
         }
       }catch (SQLException e){
         out.println("SQLException:" + e.getMessage());
       }
     }
-
-    out.println("</p>");
 
     out.println("</body>");
     out.println("</html>");
