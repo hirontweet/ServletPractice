@@ -410,4 +410,14 @@
     <servlet-name>ForwardFemale</servlet-name>
     <url-pattern>/dispatch/forwardfemale</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DBConnectTest</servlet-name>
+    <servlet-class>DatabaseConnectionTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DBConnectTest</servlet-name>
+    <url-pattern>/db/conntest</url-pattern>
+  </servlet-mapping>
 </web-app>
