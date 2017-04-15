@@ -381,4 +381,33 @@
     <url-pattern>/dispatch/include</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>DispatchForward</servlet-name>
+    <servlet-class>DispatchForward</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DispatchForward</servlet-name>
+    <url-pattern>/dispatch/forwardtest</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ForwardMale</servlet-name>
+    <servlet-class>ForwardMale</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ForwardMale</servlet-name>
+    <url-pattern>/dispatch/forwardmale</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ForwardFemale</servlet-name>
+    <servlet-class>ForwardFemale</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ForwardFemale</servlet-name>
+    <url-pattern>/dispatch/forwardfemale</url-pattern>
+  </servlet-mapping>
 </web-app>
