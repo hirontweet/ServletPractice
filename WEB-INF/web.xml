@@ -220,6 +220,9 @@
   <!-- URLマッピング デフォルトマッピング  -->
   <!-- 優先順位: No.4 -->
   <!-- デフォルトマッピングが準備されているのは、パスマッピングで /* をすると拡張子マッピングにマッチしなくなるのを防ぐため -->
+  
+  <!-- デフォルトマッピングを有効にしておくとコンテキストパスにあるルートのサーブレットクラスではないファイルが対象にかかり閲覧できない影響を及ぼす -->
+  <!--
   <servlet>
     <servlet-name>URLPattern4</servlet-name>
     <servlet-class>RequestMethods</servlet-class>
@@ -229,6 +232,7 @@
     <servlet-name>URLPattern4</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+  -->
 
   <servlet>
     <servlet-name>InitParams</servlet-name>
