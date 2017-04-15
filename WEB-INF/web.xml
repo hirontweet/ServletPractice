@@ -357,4 +357,24 @@
     <url-pattern>/session/setinterval</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>DispatchTest</servlet-name>
+    <servlet-class>DispatchTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DispatchTest</servlet-name>
+    <url-pattern>/dispatch/dispatch</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>IncludeTest</servlet-name>
+    <servlet-class>IncludeTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>IncludeTest</servlet-name>
+    <url-pattern>/dispatch/include</url-pattern>
+  </servlet-mapping>
+
 </web-app>
