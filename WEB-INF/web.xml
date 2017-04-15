@@ -260,5 +260,101 @@
     <servlet-name>CookieSample</servlet-name>
     <url-pattern>/GimmeCookie</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SessionTest</servlet-name>
+    <servlet-class>SessionTest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SessionTest</servlet-name>
+    <url-pattern>/session/sessiontest</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SessionVisitCount</servlet-name>
+    <servlet-class>SessionVisitCount</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SessionVisitCount</servlet-name>
+    <url-pattern>/session/sessionvisit</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SessionRegisterObject</servlet-name>
+    <servlet-class>SessionRegisterObject</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SessionRegisterObject</servlet-name>
+    <url-pattern>/session/registerobject</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SessionRemoveObject</servlet-name>
+    <servlet-class>SessionRemoveObject</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SessionRemoveObject</servlet-name>
+    <url-pattern>/session/deleteobject</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SessionInvalidate</servlet-name>
+    <servlet-class>SessionInvalidate</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SessionInvalidate</servlet-name>
+    <url-pattern>/session/invalidate</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SessionCheck</servlet-name>
+    <servlet-class>SessionCreationLastAccess</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SessionCheck</servlet-name>
+    <url-pattern>/session/sessioncheck</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SessionActiveTime</servlet-name>
+    <servlet-class>SessionActiveTime</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SessionActiveTime</servlet-name>
+    <url-pattern>/session/activetime</url-pattern>
+  </servlet-mapping>
+
+  <!-- 以下でデフォルトでこのWebアプリケーションのセッションの有効期限を分単位で決めることができる -->
+  <!-- 秒単位で指定する場合は、JavaのソースからsetMaxInactiveInterval()で指定する -->
+  <session-config>
+    <session-timeout>2</session-timeout>
+  </session-config>
+
+  <servlet>
+    <servlet-name>SessionChangeActiveTime</servlet-name>
+    <servlet-class>SessionChangeActiveTime</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SessionChangeActiveTime</servlet-name>
+    <url-pattern>/session/changetime</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SessionSetActiveTime</servlet-name>
+    <servlet-class>SessionSetActiveTime</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SessionSetActiveTime</servlet-name>
+    <url-pattern>/session/setinterval</url-pattern>
+  </servlet-mapping>
 
 </web-app>
